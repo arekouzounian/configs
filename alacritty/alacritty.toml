@@ -1,0 +1,33 @@
+[general]
+working_directory = "/Users/arekouzounian/"
+live_config_reload = true
+
+
+[env]
+# set env variables here 
+
+[window]
+opacity = 0.8
+blur = true
+title = "SudoEnjoyer"
+padding = { x = 10, y = 5 }
+dynamic_padding = true
+
+[font]
+size = 15
+normal = { family = "UbuntuMono Nerd Font", style = "Regular"}
+bold = { family = "UbuntuMono Nerd Font", style = "Bold"}
+italic = { family = "UbuntuMono Nerd Font", style = "Italic"}
+bold_italic = { family = "UbuntuMono Nerd Font", style = "Bold Italic" }
+
+[colors]
+[colors.primary]
+foreground = "#0bd092"
+
+
+[keyboard]
+bindings = [
+  {key = "Enter", mods = "Command", action = "ToggleSimpleFullScreen"},
+  {key = "+", mods="Shift", action="IncreaseFontSize"},
+  {key = "-", mods="Shift", action="DecreaseFontSize"}
+]

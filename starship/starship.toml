@@ -1,0 +1,33 @@
+format = """
+┌ $time $username@$hostname $git_branch $git_status ($cmd_duration)
+│ $directory
+└\\$ """
+
+
+[time]
+disabled = false
+format = '[$time]($style)'
+style = 'underline bold yellow'
+
+[username]
+show_always = true
+style_user = 'bold'
+aliases = {"arekouzounian" = "arek"}
+format = '[$user]($style)'
+
+[hostname]
+ssh_only = false 
+format = '[$ssh_symbol$hostname]($style)'
+style = 'bold italic blue'
+
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style)'
+style = 'italic blue'
+
+[cmd_duration]
+format = 'took [$duration]($style)'
+style = 'underline bold green'
+
+
+[gcloud]
+disabled = true
