@@ -1,6 +1,6 @@
 format = """
-┌ $time $username@$hostname $git_branch $git_status ($cmd_duration)
-│ $directory
+┌─$time $username@$hostname $git_branch $git_status $git_metrics ($cmd_duration)
+├┤$directory│
 └\\$ """
 
 
@@ -18,16 +18,19 @@ format = '[$user]($style)'
 [hostname]
 ssh_only = false 
 format = '[$ssh_symbol$hostname]($style)'
-style = 'bold italic blue'
+style = 'bold italic cyan'
 
 [directory]
 format = '[$path]($style)[$read_only]($read_only_style)'
 style = 'italic blue'
+truncation_symbol = '🐙 '
 
 [cmd_duration]
 format = 'took [$duration]($style)'
 style = 'underline bold green'
 
+[git_metrics]
+disabled = false
 
 [gcloud]
 disabled = true
