@@ -1,7 +1,7 @@
 format = """
-┌─$time $username@$hostname $git_branch $git_status $git_metrics ($cmd_duration)
-├┤$directory│
-└\\$ """
+┌─$time $username@$hostname $git_branch $git_status 
+├┤$directory| $git_metrics ($cmd_duration)
+└\\$> """
 
 
 [time]
@@ -22,7 +22,7 @@ style = 'bold italic cyan'
 
 [directory]
 format = '[$path]($style)[$read_only]($read_only_style)'
-style = 'italic blue'
+style = 'bold blue'
 truncation_symbol = '🐙 '
 
 [cmd_duration]
