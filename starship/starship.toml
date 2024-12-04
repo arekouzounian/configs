@@ -1,6 +1,6 @@
 format = """
 ┌─$time $username@$hostname $git_branch $git_status 
-├┤$directory| $git_metrics ($cmd_duration)
+├┤$directory│ $git_metrics ($cmd_duration)
 └\\$> """
 
 

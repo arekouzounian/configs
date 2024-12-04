@@ -28,6 +28,7 @@ foreground = "#0bd092"
 [keyboard]
 bindings = [
   {key = "Enter", mods = "Command", action = "ToggleSimpleFullScreen"},
-  {key = "+", mods="Shift", action="IncreaseFontSize"},
-  {key = "-", mods="Shift", action="DecreaseFontSize"}
+  {key = "Enter", mods = "Command|Shift", action = "ToggleFullscreen"},
+  {key = "+", mods="Command", action="IncreaseFontSize"},
+  {key = "-", mods="Command", action="DecreaseFontSize"}
 ]
