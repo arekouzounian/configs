@@ -1,7 +1,10 @@
 format = """
 ┌─$time $username@$hostname $python $git_branch $git_status 
-├┤$directory│ $git_metrics ($cmd_duration)
+├┤$directory│ ($cmd_duration)
 └\\$> """
+
+# git metrics cause significant slowdown
+# ├┤$directory│ $git_metrics ($cmd_duration)
 
 command_timeout = 750
 
